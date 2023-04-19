@@ -20,7 +20,7 @@ export const CustomerList = () => {
         {
           customers.map(customer => {
             customer.animals = animals.filter(a => customer.id === a.customer_id) || []
-            return <Customer customer={customer} />
+            return <Customer customer={customer} key={customer.id} />
           })
         }
       </article>

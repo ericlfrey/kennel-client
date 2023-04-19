@@ -24,7 +24,7 @@ export const ApplicationViews = () => {
 		<Routes>
 			<Route path="/">
 				<Route index element={< LocationList />} />
-				<Route path="locations/:locationId" element={<LocationDetail />} />
+				<Route path="locations/:location_id" element={<LocationDetail />} />
 				<Route path="customers" element={<CustomerList />} />
 			</Route>
 
@@ -45,4 +45,3 @@ export const ApplicationViews = () => {
 		</Routes>
 	)
 }
-

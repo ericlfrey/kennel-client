@@ -5,11 +5,11 @@ import "./Locations.css"
 
 export const LocationDetail = () => {
   const [location, setLocation] = useState({})
-  const { locationId } = useParams()
+  const { location_id } = useParams()
 
   useEffect(() => {
-    getLocationById(locationId).then(locationData => setLocation(locationData))
-  },[locationId])
+    getLocationById(location_id).then(locationData => setLocation(locationData))
+  }, [location_id])
 
   return (
     <section className="location">

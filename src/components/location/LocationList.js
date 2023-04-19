@@ -36,7 +36,7 @@ export const LocationList = () => {
       <div className="locations">
         {
           locations.map(location => {
-            return <Location location={location} />
+            return <Location location={location} key={location.id} />
           })
         }
       </div>
